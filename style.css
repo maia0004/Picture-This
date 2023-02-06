@@ -27,14 +27,24 @@ h1 {
 h4 {
   font-size: 1.5rem;
   font-weight: 300;
+  
 }
 
 img {
   display: block;
+  width: 100%;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 960px) {
+  .header {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  img {
+    width: 100%;
   }
 }
